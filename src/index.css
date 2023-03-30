@@ -12,6 +12,7 @@
   --clr-night: #0c0910ff;
   --clr-davys-gray: #565254ff;
   --clr-green: rgb(47, 187, 0);
+  --clr-background: #e0e0e0;
 
   /* ....used colors... */
   --clr-font-color: #0d1b2aff;
@@ -21,10 +22,8 @@
   --shadow-light: 0 5px 5px rgba(0, 0, 0, 0.1);
   --shadow-dark: 0 25px 35px rgba(0, 0, 0, 0.304);
   /* ....fonts... */
-  --ff-open-sans: "Open Sans", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
+
   --ff-Quicksand: "Quicksand", sans-serif;
-  --ff-Roboto: "Roboto", sans-serif;
 
   /* others */
   --spacing: 0.1rem;
@@ -69,11 +68,6 @@ body {
   font-family: var(--ff-Quicksand);
   width: 100vw;
   min-height: 100vh;
-  /* 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 
-  background-color: red;
-  background-color: var(--clr-white);
+  background: #e0e0e0;
 }

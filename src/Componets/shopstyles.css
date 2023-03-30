@@ -6,12 +6,12 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  box-shadow: var(--shadow-dark);
   margin: 0 1rem;
   border-radius: 44px;
-  box-shadow: 23px 23px 46px #aeabcc, -23px -23px 46px #ffffff;
   max-width: 22rem;
   min-height: 100%;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .cardcon {

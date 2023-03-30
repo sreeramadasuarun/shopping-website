@@ -8,14 +8,14 @@ const Shop = () => {
 
   console.log(names);
 
-  console.log(filternames);
-
   const result = (e) => {
     e.preventDefault();
-    const filterednames = names.filter((names) =>
+
+    const filterednames = shopdata.filter((names) =>
       names.title.toLowerCase().includes(filternames)
     );
     setnames(filterednames);
+    console.log(filternames);
   };
 
   return (
