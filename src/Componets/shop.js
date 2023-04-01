@@ -5,19 +5,36 @@ import "../Componets/shopstyles.css";
 const Shop = () => {
   const [names, setnames] = useState(shopdata);
   const [filternames, setfilternames] = useState("");
+  const [sortDirection, setSortDirection] = useState("asc");
 
   console.log(names);
 
-  const result = (e) => {
+  const handleSearch = (e) => {
     e.preventDefault();
 
     const filterednames = shopdata.filter((names) =>
-      names.title.toLowerCase().includes(filternames)
+      names.title
+        .toLowerCase()
+        .trim()
+        .includes(filternames.toLowerCase().trim())
     );
     setnames(filterednames);
     console.log(filternames);
   };
 
+  const handleSort = (e) => {
+    e.preventDefault();
+
+    const sortedProducts = shopdata.sort((a, b) => {
+      if (sortDirection === "asc") {
+        return a.price - b.price;
+      } else {
+        return b.price - a.price;
+      }
+    });
+    setnames(sortedProducts);
+    setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+  };
   return (
     <div className="allcard">
       <form>
@@ -30,8 +47,12 @@ const Shop = () => {
           onChange={(e) => setfilternames(e.target.value)}
           placeholder="search name"
         />
-        <button onClick={result} type="submit">
+        <button onClick={handleSearch} type="submit">
           click
+        </button>
+        <button onClick={handleSort}>
+          Sort by Price (
+          {sortDirection === "asc" ? "Low to High" : "High to Low"})
         </button>
       </form>
       <h1>shopping</h1>
@@ -43,7 +64,7 @@ const Shop = () => {
                 <div className="image">
                   <img src={image} alt="noimage" />
                 </div>
-                <h3>{title.split(" ").slice(0, 2)}</h3>
+                <h3>{title.split(" ").slice(0, 2).join(" ")}</h3>
 
                 <div className="right-left">
                   <div className="left">
