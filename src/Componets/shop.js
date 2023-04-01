@@ -47,10 +47,16 @@ const Shop = () => {
           onChange={(e) => setfilternames(e.target.value)}
           placeholder="search name"
         />
-        <button onClick={handleSearch} type="submit">
+        <button
+          className="button-filters "
+          onClick={handleSearch}
+          type="submit"
+        >
           click
         </button>
-        <button onClick={handleSort}>
+        <br />
+
+        <button className="button-filters " onClick={handleSort}>
           Sort by Price (
           {sortDirection === "asc" ? "Low to High" : "High to Low"})
         </button>
