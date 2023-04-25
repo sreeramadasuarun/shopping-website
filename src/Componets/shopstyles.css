@@ -1,4 +1,4 @@
-.card {
+/* .card {
   background-color: var(--clr-white);
   text-align: center;
   padding: 1.5rem;
@@ -6,21 +6,20 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin: 0 1rem;
   border-radius: 44px;
   max-width: 22rem;
   min-height: 100%;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-}
+} */
 
-.cardcon {
+/* .cardcon {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
-}
+} */
 
-.allcard a {
+/* .allcard a {
   text-decoration: none;
 }
 
@@ -29,44 +28,42 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding: 5rem;
-}
+} */
 
-@media screen and (max-width: 697px) {
+/* @media screen and (max-width: 697px) {
   .cardcon {
     display: grid;
     grid-template-columns: 2fr;
   }
-}
+} */
 
-.right-left {
+/* .right-left {
   display: flex;
   flex-direction: row;
   gap: 5rem;
   font-size: 0.9rem;
   justify-content: space-between;
-}
+} */
 
-.image {
+/* .image {
   width: 10rem;
   height: 10rem;
   text-align: center;
   mix-blend-mode: multiply;
-}
+} */
 
-img {
+/* img {
   border-radius: 1rem;
   text-align: center;
-}
-.left {
+} */
+
+/* .left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.bold {
-  font-weight: 900;
-}
-.button-filters {
+} */
+
+/* .button-filters {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -77,12 +74,14 @@ img {
   font-size: 16px;
   border-radius: 10px;
   margin: 10px;
-}
-input[type="text"],
+  cursor: pointer;
+} */
+
+/* input[type="text"],
 select,
 textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-}
+} */
