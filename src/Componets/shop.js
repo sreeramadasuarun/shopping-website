@@ -49,7 +49,7 @@ const Shop = () => {
           placeholder="search name"
         />
         <button
-          className="bg-green px-12 py-2 text-white text-[1rem] tracking-widest "
+          className="bg-rosy px-12 py-2 text-white text-[1rem] tracking-widest "
           onClick={handleSearch}
           type="submit"
         >
@@ -57,7 +57,7 @@ const Shop = () => {
         </button>
 
         <button
-          className="bg-green px-12 py-2 text-white text-[1rem] tracking-widest "
+          className="bg-[green] px-12 py-2 text-white text-[1rem] tracking-widest "
           onClick={handleSort}
         >
           Sort by Price (
@@ -70,7 +70,7 @@ const Shop = () => {
           return (
             <article
               key={id}
-              className="bg-whitegray text-center p-[1.3rem] flex flex-col gap-5 items-center rounded-[1.3rem] max-w-22 max-h-full shadow-3xl"
+              className="bg-whitegray text-center p-[1.3rem] flex flex-col gap-5 items-center rounded-[1.3rem] max-w-22 max-h-full shadow-shadownero hover:shadow-inner"
             >
               <div className=" w-[10rem] h-[10rem] mix-blend-multiply text-center">
                 <img src={image} alt="noimage" />
